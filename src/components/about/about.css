@@ -1,0 +1,117 @@
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+ width: 100vw;
+
+padding: 20px;
+padding-top: 9vh;
+height: 70vh;
+}
+
+.circle{
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+  gap: 50px;
+}
+
+
+.para{
+    opacity: 0;
+transition: all 0.5s ease;
+}
+
+.showPara{
+    opacity: 1;
+transition: all 0.5s ease;
+    
+}
+
+
+
+@media screen  and (max-width:768px){
+    .about{
+        display: flex;
+       justify-content: flex-start;
+        flex-direction: column;
+      gap: 15px;
+      padding:0px 0 20px 0;
+padding-top: 20px;
+
+    }
+    .testimonials h1{
+        font-size: 30px;
+      margin-top: 0;
+    }
+    .person{
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        margin-bottom: 0px;
+        align-items: center;
+    }
+    .review{
+        display: flex;
+        flex-direction: column;
+        padding: 4px 10px;
+      transition: all 0.5s ease;
+        width: 65%;
+        height: max-content;
+    
+    cursor: pointer;
+    gap: 5px;
+    
+    box-shadow: 2px 2px 10px 5px  rgb(237, 231, 231);
+        border-radius: 5px;
+    }
+    .review p{
+        text-align: center;
+        background-color: rgb(235, 175, 187);
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    .review img{
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
+    align-self: center;
+    }
+    .review span{
+        display: flex;
+        flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    }
+    
+    .name{
+        font-weight: 600;
+      
+    }
+}
+@media screen and (max-width:500px){
+    .review{
+        display: flex;
+        flex-direction: column;
+        padding: 4px 10px;
+      transition: all 0.5s ease;
+        width: 80%;
+        height: max-content;
+    
+    cursor: pointer;
+    gap: 5px;
+    
+    box-shadow: 2px 2px 10px 5px  rgb(237, 231, 231);
+        border-radius: 5px;
+    }
+    .review p{
+        text-align: center;
+        background-color: rgb(235, 175, 187);
+        padding: 3px 10px;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+}

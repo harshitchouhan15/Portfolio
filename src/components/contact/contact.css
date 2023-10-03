@@ -1,0 +1,90 @@
+.contact{
+    display: flex;
+    height: calc(100vh - 70px);
+   margin: 0;
+   
+
+}
+.picture{
+    flex: 1;
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formcontainer{
+    display: flex;
+flex-direction: column;
+gap: 20px;
+width: 80%;
+align-items: center;
+}
+
+.formcontainer input{
+    padding: 15px;
+  width: 60%;
+}
+.formcontainer input:focus{
+    outline: none;
+}
+.formcontainer textarea{
+    padding: 15px;
+    width: 60%;
+}
+.formcontainer textarea:focus{
+    outline: none;
+}
+.formcontainer button{
+    padding: 8px 22px;
+    background-color: crimson;
+    border: none;
+    align-self: center;
+    color: white;
+    border-radius: 1px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.formcontainer button:hover{
+    background-color: rgb(205, 9, 48);
+
+}
+
+@media screen and (max-width:768px){
+    .contact{
+        flex-direction: column;
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+    .picture{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .picture img{
+width: 90%;
+height: 80%;
+    }
+    .form{
+        height: max-content;
+    }
+    .formcontainer h1{
+        font-size: 40px;
+    }
+    .formcontainer{
+        gap: 10px;
+    }
+    .formcontainer input{
+        width: 95%;
+    }
+    .formcontainer textarea{
+        width: 95%;
+    }
+}

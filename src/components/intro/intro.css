@@ -1,0 +1,135 @@
+.intro{
+    display: flex;
+padding-top: 10vh;
+height: 95vh;
+overflow: hidden;
+}
+
+.introleft{
+width: 50%;
+display: flex;
+animation: slideLeft 1.5s ease-in-out forwards ;
+}
+
+
+.introleft img{
+width: 83%;
+height: 90%;
+border-radius: 50%;
+/* animation: slideLeft 1.5s ease-in-out ; */
+}
+@keyframes slideLeft {
+    from{
+        transform: translate(-1vw,10vw);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+.textref{
+    color: crimson;
+}
+.introright{
+width: 50%;
+display: flex;
+flex-direction: column;
+padding-top: 24vh;
+padding-left: 0vw;
+
+margin-right: 120px;
+/* animation: slide 1.5s ease-in-out ; */
+}
+
+@keyframes slide {
+    from{
+        transform: translate(5vw,10vw);
+        
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+.introright h1{
+    font-size: 50px;
+    color: crimson;
+    margin-top: 10px;
+    font-weight: 800;
+    margin-bottom: 10px;
+/* animation: size 1.5s ease-in-out forwards ; */
+/*  */
+}
+
+
+@keyframes size {
+    from{
+       font-size: 10px;
+    }
+    to{
+       font-size: 50px;
+    }
+}
+
+.introright h2{
+    font-size: 30px;
+    color: #222;
+    display: flex;
+    gap: 5px;
+}
+
+
+
+
+@media screen  and (max-width:768px){
+    .intro{
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: max-content;
+      margin-bottom: 50px;
+    }
+    .introleft{
+        width: 100%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    }
+    .introleft img{
+    width: 120%;
+    height: 150%;
+    border-radius: 50%;
+   transform: translateY(-50px);
+    }
+    
+    
+    .introright{
+   justify-content: center;
+   padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      padding-left: 0px;
+      margin-right: 0;
+    
+    }
+    .introright h1{
+        font-size: 40px;
+        color: crimson;
+        margin-top: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+  
+    .introright h3{
+        font-size: 25px;
+        color: #222;
+    }
+}
+
+
+
