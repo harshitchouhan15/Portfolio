@@ -72,7 +72,7 @@ const screenWidth = window.innerWidth
      <Skill  darkMode={darkMode} className={darkMode?'dark':'title'}>
      <img style={{width:item.width}} src={item.src} alt="" />
     </Skill>
-    <Name  onClick={()=>setSelected(i)} >
+    <Name  onClick={()=>selected===i?setSelected(null):setSelected(i)} >
     <h3>   {screenWidth>768 && i===3?item.last:item.name} </h3>
       <Arrow  selected={selected===i}><KeyboardArrowUpIcon fontSize='large' htmlColor='white' /></Arrow>
     </Name>
@@ -104,7 +104,7 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 22px;
   color: white;
 }
 }
@@ -136,7 +136,7 @@ border-top-right-radius: calc(50% - ${props=>props.scrollY/18}px);
 border-top-left-radius: calc(50% - ${props=>props.scrollY/18}px);
 top: -20%;
 left: -50%;
-transform: translateY(${props=>props.scrollY/5}px);
+transform: translateY(${props=>props.scrollY/6}px);
 transform: ${props=>props.isVisible&&' translateY( 0)'};
 top: ${props=>props.isVisible&&0};
 border-radius: ${props=>props.isVisible&&0};
@@ -163,8 +163,9 @@ padding: 40px 20px;
  @media screen and (max-width:768px) {
    height: max-content;
    padding: 10px;
- overflow-x: hidden;
-padding-top: 70px;
+ overflow: hidden;
+padding-top: 50px;
+
    }
 `
 
@@ -176,7 +177,8 @@ const Heading = styled.h1`
    font-weight: 500;
    font-size: 4.2rem;
    @media screen and (max-width:768px) {
-    font-size: 50px;
+    font-size: 38px;
+
  }
 `
 
@@ -251,7 +253,7 @@ const Bottom = styled.div`
     padding: 40px 60px;
     @media screen and (max-width:768px) {
 flex-direction: column;
-padding: 10px 2px;
+padding: 5px 2px;
 height: max-content;
 gap: 11px;
    }

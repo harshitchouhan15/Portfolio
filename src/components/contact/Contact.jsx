@@ -33,8 +33,8 @@ const handleSubmit=(e)=>{
 </div>
 
 
-<div className="form" onSubmit={handleSubmit}>
-  <form ref={form} className="formcontainer">
+<div className="form" >
+  <form ref={form} onSubmit={handleSubmit} className="formcontainer">
 
   <Heading>Contact.</Heading>
   <input type="text" name="name" id="" required placeholder='Your name'/>

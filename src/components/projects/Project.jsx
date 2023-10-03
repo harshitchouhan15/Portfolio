@@ -18,11 +18,11 @@ const Container=styled.div`
     position: relative;
     color: ${props=>props.darkMode?'white':'black'} ;
     background-color: ${props=>props.darkMode?'black':'white'} ;
-    border-top: ${props=>props.darkMode&&'8px solid #3a3a3a'};
    @media screen and (max-width:768px) {
     border-bottom: ${props=>props.darkMode&&'8px solid #3a3a3a'};
     flex-direction: column;
      gap: 10px;
+     
    }
 `
 const Track =styled.div`
@@ -33,6 +33,7 @@ const Track =styled.div`
     @media screen and (max-width:768px) {
    height: max-content;
    width: 100vw;
+   margin-top: 10px;
    }
 `
 const SlideContainer =styled.div`
@@ -230,7 +231,7 @@ const Bottom =styled.div`
    }
 `
 const Dot = styled.div`
-    width: 22px;height: 22px;
+    width: 18px;height: 18px;
     border-radius: 50%;
     border: 2px solid white;
     transition: all 0.5s ease;

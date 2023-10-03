@@ -1,5 +1,5 @@
 import './intro.css'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { useEffect } from 'react'
 import hello from "../../assets/hello.svg"
 import developer from "../../assets/developerNoBg.png"
@@ -12,7 +12,7 @@ const Intro = () => {
   setScrollY(window.scrollY)
   }
 
-  const textRef = useRef()
+  
 
   useEffect(()=>{
     window.addEventListener('scroll',scrollEvent)

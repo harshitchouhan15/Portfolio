@@ -10,6 +10,7 @@ const About = () => {
   const ref = useRef()
   const dispatch=useDispatch()
   const [isVisible,setIsVisible]= useState(false)
+  
   useEffect(()=>{
     const options={
         root:null,

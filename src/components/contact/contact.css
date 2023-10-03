@@ -67,6 +67,7 @@ align-items: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        display: none;
     }
     .picture img{
 width: 90%;
@@ -79,7 +80,7 @@ height: 80%;
         font-size: 40px;
     }
     .formcontainer{
-        gap: 10px;
+        gap: 15px;
     }
     .formcontainer input{
         width: 95%;

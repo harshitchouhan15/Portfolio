@@ -11,7 +11,7 @@ const Topbar = ({menu,setMenu}) => {
    <Container menu={menu} darkMode={darkMode}>
     <Logo className="logo"> 
     <Box>
-    <Name>Harshit</Name>
+    <Name style={{transition:"all 0.7s ease"}} >Harshit</Name>
       </Box>
       <Box>
     <Name> Chouhan</Name>
@@ -84,6 +84,7 @@ const Name = styled.h1`
    font-family: 'Syne';
    @media screen and (max-width:768px) {
 font-size:25px;
+transition: color 0.7s ease;
 }
 `
 
@@ -100,7 +101,6 @@ const Container=styled.div`
   background-color: ${props=>props.darkMode||props.menu?props.darkMode?'black':'#15023a':'white'};
   color: ${props=>props.darkMode||props.menu&&'white'};
 top: 0;
-transition: all  1s  ease;
 animation: slideLeft 1s ease;
   display: flex;align-items: center;
   padding: 0 3vw;

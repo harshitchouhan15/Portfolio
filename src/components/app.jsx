@@ -62,19 +62,21 @@ function Menu({menu,setMenu}){
 }
 
 const Card = styled.div`
-      display: flex;
+     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: ${props=>props.darkMode?'black':'#15023a'};
     height:55vh;
-    width: 350px;
+   
     position: fixed;
     top: 0;
     width: 100vw;
+    padding-top: 12px;
+
     z-index:999;
     right:${props=>props.menu?0:'-105vw'};
   display: none;
-    transition: all 1s ease;
+    transition: all 0.7s ease;
     @media screen and (max-width:768px) {
       display: flex;
     }
