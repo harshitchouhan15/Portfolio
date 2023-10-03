@@ -3,7 +3,7 @@
     justify-content: center;
     gap: 10vw;
  width: 100vw;
-
+z-index: 5;
 padding: 20px;
 padding-top: 9vh;
 height: 70vh;
