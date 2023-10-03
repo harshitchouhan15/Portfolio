@@ -144,6 +144,8 @@ background:${props=>props.darkMode&&'black'};
 transition:all 0.3s ease;
 @media screen and (max-width:768px) {
 top: 0;
+left: 0;
+width: 100%;
 border-radius: 0;
 transform: translateY(0);
 }
@@ -164,8 +166,8 @@ padding: 40px 20px;
    height: max-content;
    padding: 10px;
  overflow: hidden;
-padding-top: 50px;
-
+padding-top: 30px;
+margin-top: 10px;
    }
 `
 
