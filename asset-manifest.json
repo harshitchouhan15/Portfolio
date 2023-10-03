@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.70b303b3.css",
+    "main.js": "/static/js/main.a8d66d52.js",
+    "static/media/lastBlog.png": "/static/media/lastBlog.ec9ef43a3d95f4bafacb.png",
+    "static/media/ig.png": "/static/media/ig.011e36a7d9fc508be107.png",
+    "static/media/snaptly.png": "/static/media/snaptly.22a5115a91e4e85e3f9d.png",
+    "static/media/js1.png": "/static/media/js1.b35b06ee43eccfec3018.png",
+    "static/media/react1.png": "/static/media/react1.81ed438b18e24116794d.png",
+    "static/media/node1.png": "/static/media/node1.fc3bd1ec69d7a50e685a.png",
+    "static/media/meetnew.png": "/static/media/meetnew.fe1c426ba23c983dfafe.png",
+    "static/media/developerNoBg.png": "/static/media/developerNoBg.90eed26b6ba802842a53.png",
+    "static/media/css1.png": "/static/media/css1.7b2eb4849c1c79b2be14.png",
+    "static/media/hello.svg": "/static/media/hello.6475c886bdf47545086e13597e7f6005.svg",
+    "index.html": "/index.html",
+    "static/media/tick.svg": "/static/media/tick.6f740cec670789d6ac0e5c9f7c7d1c84.svg",
+    "main.70b303b3.css.map": "/static/css/main.70b303b3.css.map",
+    "main.a8d66d52.js.map": "/static/js/main.a8d66d52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70b303b3.css",
+    "static/js/main.a8d66d52.js"
+  ]
+}
